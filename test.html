@@ -1,0 +1,86 @@
+<html>
+<head>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/dat.gui.js"></script>
+
+</head>
+<body>
+<script>
+var output = new Output(), container;
+
+// Setup the scene and then call animate
+init();
+
+// Setup the scene
+function init() {
+    // Show that we are initiated
+    output.log("Init called");
+
+    // Create a dov to contain everything
+    container = document.createElement('div');
+    document.body.appendChild(container);
+     
+    
+    // dat.gui controls
+    var view = this;
+    view.CheckBox1 = true;
+    view.CheckBox2 = false;
+    
+
+    var gui = new dat.GUI();
+    var CB1Controller = gui.add(view, 'CheckBox1').listen();
+    CB1Controller.onChange(function(value){
+            view.CheckBox2 = !value;
+    });
+    
+    var CB2Controller = gui.add(view, 'CheckBox2').listen();
+    CB2Controller.onChange(function(value){
+            view.CheckBox1 = !value;
+    });
+
+    output.log("dat.GUI added");
+}
+
+
+
+
+
+
+function Output() {
+
+    // Create an output window, style and add to body
+    var outputWindow = $("<div></div>").attr({
+        id: 'outputWin'
+    }).css({
+        backgroundColor: '#fff',
+        border: '1px solid #000',
+        bottom: 10,
+        color: '#333',
+        fontFamily: 'arial, san-serif',
+        fontSize: '11px',
+        height: 60,
+        overflow: 'auto',
+        padding: 5,
+        position: 'absolute',
+        right: 10,
+        width: 150
+    }).appendTo('body'),
+
+        log = function(text) {
+            outputWindow.append(text + "<br />");
+            outputWindow.stop(true, true).animate({
+                scrollTop: outputWindow.get(0).scrollHeight
+            });
+        };
+
+    return {
+        log: log,
+        outputWindow: outputWindow
+    }
+};
+
+
+</script>
+</body>
+</html>
