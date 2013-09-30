@@ -362,7 +362,11 @@ function getPercentage(values){
 		genoTypes[key]= (genoTypes[key] * 100) / values.length;
 	}
 	//console.log(genoTypes);
-	return genotypes;
+	return genoTypes;
+}
+
+function phenotyper(genoTypes){
+
 }
 
 
@@ -393,8 +397,10 @@ $(document).ready(function() {
 		//console.log(finalArray1);
 		//console.log(finalArray2);
 
-		res = generateResults(finalArray1, finalArray2);
-		getPercentage(res);
+		var res = generateResults(finalArray1, finalArray2);
+		var percentages = getPercentage(res);
+		console.log(percentages);
+		percentages.length;
 		//console.log(parent1);
 		//console.log(parent2);
 
