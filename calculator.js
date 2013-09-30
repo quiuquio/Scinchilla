@@ -378,7 +378,7 @@ $(document).ready(function() {
 				var input = $(this).prop("value","on");
 				tratti[index] = new trait(input.prop("id"));
 			});
-		tratti.push(new trait("p1T8Etero"));
+		tratti.push(new trait("p1T8Homo"));
 		parent1 = new parent(tratti);
 		var tratti = [];
 		$("#parent2 :radio:checked").each(
@@ -386,7 +386,7 @@ $(document).ready(function() {
 				var input = $(this).prop("value","on");
 				tratti[index] = new trait(input.prop("id"));
 			});
-		tratti.push(new trait("p1T8Etero"));
+		tratti.push(new trait("p1T8Homo"));
 		parent2 = new parent(tratti);
 		var crossArray1 = generateCrossArray(parent1);
 		var crossArray2 = generateCrossArray(parent2);
