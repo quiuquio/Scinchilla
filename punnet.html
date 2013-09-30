@@ -1,0 +1,144 @@
+<html>
+	
+	<head>
+		<!--dot-luv-->
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/dot-luv/jquery-ui.min.css" type="text/css" rel="Stylesheet" />
+		<!-- le-frog-->
+		<!--<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/le-frog/jquery-ui.css" type="text/css" rel="Stylesheet" />-->
+		<link href="css/style.css" type="text/css" rel="StyleSheet" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  		
+		<script>
+			$(function() {
+				$( ".radio" ).buttonset();
+				$( "button" ).button().click(function( event ) {	event.preventDefault();	});
+			});
+	    </script>
+	    <script type="text/javascript" src="calculator.js"></script>
+	</head>
+	<body>
+		
+		<div id="calculator">
+			<form id="parent1">
+				<span>Parent one</span>
+				<div class="trait">
+					<span class="trateName">Beige</span>
+					<div class="radio" id="p1T1">
+					    <input type="radio" id="p1T1no" name="p1T1" checked="checked"/><label for="p1T1no" >Non presente</label>
+					    <input type="radio" id="p1T1Etero" name="p1T1" /><label for="p1T1Etero" >Carrier</label>
+					    <input type="radio" id="p1T1Homo" name="p1T1"  /><label for="p1T1Homo" >Homozigote</label>
+			    	</div>
+				</div>
+				<div class="trait">
+					<span class="trateName">Violet</span>
+					<div class="radio" id="p1T2">
+					    <input type="radio" id="p1T2no" name="p1T2" checked="checked"/><label for="p1T2no">Non presente</label>
+					    <input type="radio" id="p1T2Etero" name="p1T2" /><label for="p1T2Etero">Carrier</label>
+					    <input type="radio" id="p1T2Homo" name="p1T2"  /><label for="p1T2Homo">Homozigote</label>
+			    	</div>
+				</div>
+				<div class="trait">
+					<span class="trateName">Sapphire</span>
+					<div class="radio" id="p1T3">
+					    <input type="radio" id="p1T3no" name="p1T3" checked="checked"/><label for="p1T3no">Non presente</label>
+					    <input type="radio" id="p1T3Etero" name="p1T3" /><label for="p1T3Etero">Carrier</label>
+					    <input type="radio" id="p1T3Homo" name="p1T3"  /><label for="p1T3Homo">Homozigote</label>
+			    	</div>
+				</div>
+				<div class="trait">
+					<span class="trateName">German Violet</span>
+					<div class="radio" id="p1T4">
+					    <input type="radio" id="p1T4no" name="p1T4" checked="checked"/><label for="p1T4no">Non presente</label>
+					    <input type="radio" id="p1T4Etero" name="p1T4" /><label for="p1T4Etero">Carrier</label>
+					    <input type="radio" id="p1T4Homo" name="p1T4"  /><label for="p1T4Homo">Homozigote</label>
+			    	</div>
+				</div>
+				<div class="trait">
+					<span class="trateName">Bianco</span>
+					<div class="radio" id="p1T5">
+					    <input type="radio" id="p1T5no" name="p1T5" checked="checked"/><label for="p1T5no">Non presente</label>
+					    <input type="radio" id="p1T5Etero" name="p1T5" /><label for="p1T5Etero">Carrier</label>
+					    <!--<input type="radio" id="p1T5Homo" name="p1T5"  /><label for="p1T5Homo">Homozigote</label>-->
+			    	</div>
+				</div>
+				<div class="trait">
+					<span class="trateName">Touch of Velvet(TOV)</span>
+					<div class="radio" id="p1T6">
+					    <input type="radio" id="p1T6no" name="p1T6" checked="checked"/><label for="p1T6no">Non presente</label>
+					    <input type="radio" id="p1T6Etero" name="p1T6" /><label for="p1T6Etero">Carrier</label>
+					    <input type="radio" id="p1T6Homo" name="p1T6"  /><label for="p1T6Homo">Homozigote</label>
+			    	</div>
+				</div>
+				<div class="trait">
+					<span class="trateName">Ebony</span>
+					<div class="radio" id="p1T7">
+					    <input type="radio" id="p1T7no" name="p1T7" checked="checked"/><label for="p1T7no">Ebony 0</label>
+					    <input type="radio" id="p1T71" name="p1T7" /><label for="p1T71">Ebony 1</label>
+					    <input type="radio" id="p1T72" name="p1T7"  /><label for="p1T72">Ebony 2</label>
+			    	</div>
+				</div>
+			</form>
+			<div id="parent2">
+				<span>Parent Two</span>	
+				<div class="trait">
+					<span class="trateName">Beige</span>
+					<div class="radio" id="p2T1">
+					    <input type="radio" id="p2T1no" name="p2T1" checked="checked"/><label for="p2T1no">Non presente</label>
+					    <input type="radio" id="p2T1Etero" name="p2T1" /><label for="p2T1Etero">Carrier</label>
+					    <input type="radio" id="p2T1Homo" name="p2T1"  /><label for="p2T1Homo">Homozigote</label>
+			    	</div>
+				</div>
+				<div class="trait">
+					<span class="trateName">Violet</span>
+					<div class="radio" id="p2T2">
+					    <input type="radio" id="p2T2no" name="p2T2" checked="checked"/><label for="p2T2no">Non presente</label>
+					    <input type="radio" id="p2T2Etero" name="p2T2" /><label for="p2T2Etero">Carrier</label>
+					    <input type="radio" id="p2T2Homo" name="p2T2"  /><label for="p2T2Homo">Homozigote</label>
+			    	</div>
+				</div>
+				<div class="trait">
+					<span class="trateName">Sapphire</span>
+					<div class="radio" id="p2T3">
+					    <input type="radio" id="p2T3no" name="p2T3" checked="checked"/><label for="p2T3no">Non presente</label>
+					    <input type="radio" id="p2T3Etero" name="p2T3" /><label for="p2T3Etero">Carrier</label>
+					    <input type="radio" id="p2T3Homo" name="p2T3"  /><label for="p2T3Homo">Homozigote</label>
+			    	</div>
+				</div>
+				<div class="trait">
+					<span class="trateName">German Violet</span>
+					<div class="radio" id="p2T4">
+					    <input type="radio" id="p2T4no" name="p2T4" checked="checked"/><label for="p2T4no">Non presente</label>
+					    <input type="radio" id="p2T4Etero" name="p2T4" /><label for="p2T4Etero">Carrier</label>
+					    <input type="radio" id="p2T4Homo" name="p2T4"  /><label for="p2T4Homo">Homozigote</label>
+			    	</div>
+				</div>
+				<div class="trait">
+					<span class="trateName">Bianco</span>
+					<div class="radio" id="p2T5">
+					    <input type="radio" id="p2T5no" name="p2T5" checked="checked"/><label for="p2T5no">Non presente</label>
+					    <input type="radio" id="p2T5Etero" name="p2T5" /><label for="p2T5Etero">Carrier</label>
+					    <!--<input type="radio" id="p2T5Homo" name="p2T5"  /><label for="p2T5Homo">Homozigote</label>-->
+			    	</div>
+				</div>
+				<div class="trait">
+					<span class="trateName">Touch of Velvet(TOV)</span>
+					<div class="radio" id="p2T6">
+					    <input type="radio" id="p2T6no" name="p2T6" checked="checked"/><label for="p2T6no">Non presente</label>
+					    <input type="radio" id="p2T6Etero" name="p2T6" /><label for="p2T6Etero">Carrier</label>
+					    <input type="radio" id="p2T6Homo" name="p2T6"  /><label for="p2T6Homo">Homozigote</label>
+			    	</div>
+				</div>
+				<div class="trait">
+					<span class="trateName">Ebony</span>
+					<div class="radio" id="p2T7">
+					    <input type="radio" id="p2T7no" name="p2T7" checked="checked"/><label for="p2T7no">Ebony 0</label>
+					    <input type="radio" id="p2T71" name="p2T7" /><label for="p2T71">Ebony 1</label>
+					    <input type="radio" id="p2T72" name="p2T7"  /><label for="p2T72">Ebony 2</label>
+			    	</div>
+				</div>
+			</div>
+		</div>
+		<input type="button" id="calculate" value="Calcola!!!"/>
+	</body>
+</html>

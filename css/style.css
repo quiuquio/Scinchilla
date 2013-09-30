@@ -1,0 +1,27 @@
+/****
+	Page style
+****/
+body{
+	background-color:#35666F;
+}
+#calculator{
+	width:100%;
+}
+#parent1{
+	position: relative;
+	width: 50%;
+	float: right; 
+}
+#parent2 {
+	position: relative;
+	width: 50%;
+}
+
+/****
+	UI style
+****/
+
+/*Set button font size*/
+.ui-button,  .ui-button-text .ui-button{  
+font-size: 15px !important; 
+}
