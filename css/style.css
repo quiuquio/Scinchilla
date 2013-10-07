@@ -9,12 +9,16 @@ body{
 }
 #parent1{
 	position: relative;
-	width: 50%;
+	overflow: hidden;
+	width: auto;
 	float: right; 
+	border: solid 2px black ;
 }
 #parent2 {
 	position: relative;
-	width: 50%;
+	width: auto;
+	float: left;
+	border: solid 2px black ;
 }
 
 /****
@@ -24,4 +28,16 @@ body{
 /*Set button font size*/
 .ui-button,  .ui-button-text .ui-button{  
 font-size: 15px !important; 
+}
+
+/*loading gif*/
+#wait{
+	/*visibility: hidden;*/
+}
+#titolo{
+	text-align: center;
+}
+#spiegazione{
+	text-align: center;
+	font-size: 12pt;
 }

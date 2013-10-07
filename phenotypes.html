@@ -742,7 +742,17 @@ function toCsvValue(theValue, sDelimiter) {
 
 	return output;
 }
+
+tbl.forEach(function(entry){
+	console.log(entry);
+	entry[2].replace("StdStd","HH");
+});
+
+
+
 asd = toCsv(tbl);
+
+
 
 	</script>
 	</body>

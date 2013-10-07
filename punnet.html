@@ -18,6 +18,15 @@
 				$( "button" ).button().click(function( event ) {	event.preventDefault();	});
 			});
 	    </script>
+
+		<!--<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>-->
+
+		<script src="js/highcharts.js"></script>
+		<script src="js/exporting.js"></script>
+
+
+	    <script src="jquery-csv-0.71.min.js"></script>
 	    <script type="text/javascript" src="calculator.js"></script>
 	</head>
 	<body>
@@ -61,7 +70,7 @@
 					<span class="trateName">Bianco</span>
 					<div class="radio" id="p1T5">
 					    <input type="radio" id="p1T5no" name="p1T5" checked="checked"/><label for="p1T5no">Non presente</label>
-					    <input type="radio" id="p1T5Etero" name="p1T5" /><label for="p1T5Etero">Carrier</label>
+					    <input type="radio" id="p1T5Etero" name="p1T5" /><label for="p1T5Etero">White</label>
 					    <!--<input type="radio" id="p1T5Homo" name="p1T5"  /><label for="p1T5Homo">Homozigote</label>-->
 			    	</div>
 				</div>
@@ -69,8 +78,8 @@
 					<span class="trateName">Touch of Velvet(TOV)</span>
 					<div class="radio" id="p1T6">
 					    <input type="radio" id="p1T6no" name="p1T6" checked="checked"/><label for="p1T6no">Non presente</label>
-					    <input type="radio" id="p1T6Etero" name="p1T6" /><label for="p1T6Etero">Carrier</label>
-					    <input type="radio" id="p1T6Homo" name="p1T6"  /><label for="p1T6Homo">Homozigote</label>
+					    <input type="radio" id="p1T6Etero" name="p1T6" /><label for="p1T6Etero">TOV</label>
+					    <!--<input type="radio" id="p1T6Homo" name="p1T6"  /><label for="p1T6Homo">Homozigote</label>-->
 			    	</div>
 				</div>
 				<div class="trait">
@@ -120,7 +129,7 @@
 					<span class="trateName">Bianco</span>
 					<div class="radio" id="p2T5">
 					    <input type="radio" id="p2T5no" name="p2T5" checked="checked"/><label for="p2T5no">Non presente</label>
-					    <input type="radio" id="p2T5Etero" name="p2T5" /><label for="p2T5Etero">Carrier</label>
+					    <input type="radio" id="p2T5Etero" name="p2T5" /><label for="p2T5Etero">White</label>
 					    <!--<input type="radio" id="p2T5Homo" name="p2T5"  /><label for="p2T5Homo">Homozigote</label>-->
 			    	</div>
 				</div>
@@ -128,8 +137,8 @@
 					<span class="trateName">Touch of Velvet(TOV)</span>
 					<div class="radio" id="p2T6">
 					    <input type="radio" id="p2T6no" name="p2T6" checked="checked"/><label for="p2T6no">Non presente</label>
-					    <input type="radio" id="p2T6Etero" name="p2T6" /><label for="p2T6Etero">Carrier</label>
-					    <input type="radio" id="p2T6Homo" name="p2T6"  /><label for="p2T6Homo">Homozigote</label>
+					    <input type="radio" id="p2T6Etero" name="p2T6" /><label for="p2T6Etero">TOV</label>
+					    <!--<input type="radio" id="p2T6Homo" name="p2T6"  /><label for="p2T6Homo">Homozigote</label>-->
 			    	</div>
 				</div>
 				<div class="trait">
@@ -142,6 +151,26 @@
 				</div>
 			</div>
 		</div>
+		<h1 id="titolo">Calcolatore di incroci<h1>
+		<div id="spiegazione">
+			<span><p>Qui ci andrebbe del testo per spiegare quello che il calcolatore fa. Potrebbe essere carino.
+				il testo seguente serve solo per riempire lo spazione.</p>
+				<ol>
+					<li>There is no silver bullet, no universal solution for every problem;</li>
+					<li>There is always a right tool for each job;</li>
+					<li>
+						If you dont't like the avaliable tools for what you want to do, try building them youselves. This is
+						what developers have been doind for the last 20 years!
+					</li>
+					<li>Android and Phonegap are an OPEN SOURCE projects and you can contribute to them <a href="https://github.com/phonegap/phonegap" > here</a>
+						and <a href="http://source.android.com/">here</a>;
+					</li>
+				</ol>
+			</span>
+		</div>
 		<input type="button" id="calculate" value="Calcola!!!"/>
+		<img src="ajax-loader.gif" id="wait"/>
+		<div id="results"></div>
+		<!--<div id="container" style="min-width: 310px; width: 50%; margin: 0 auto"></div>-->
 	</body>
 </html>
